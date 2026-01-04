@@ -1,0 +1,117 @@
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  min-height: 100vh;
+  background: linear-gradient(180deg, #ffe6f0, #ffffff);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Card */
+.form-card {
+  background: #fff;
+  width: 480px;
+  padding: 38px 34px;
+  border-radius: 20px;
+  box-shadow: 0 25px 55px rgba(255, 95, 162, 0.25);
+  animation: fadeUp 0.6s ease;
+}
+
+@keyframes fadeUp {
+  from {
+    opacity: 0;
+    transform: translateY(28px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Title */
+.form-card h3 {
+  text-align: center;
+  font-size: 26px;
+  color: #ff5fa2;
+  margin-bottom: 22px;
+}
+
+/* Section title */
+.section-title {
+  font-size: 14px;
+  font-weight: 600;
+  color: #ff5fa2;
+  margin: 20px 0 10px;
+}
+
+/* Input group */
+.form-group {
+  margin-bottom: 14px;
+}
+
+.form-group label {
+  display: block;
+  font-size: 13px;
+  color: #555;
+  margin-bottom: 6px;
+}
+
+.form-group input {
+  width: 100%;
+  padding: 12px 14px;
+  border-radius: 12px;
+  border: 1.8px solid #ffd1e3;
+  outline: none;
+  font-size: 14px;
+  transition: 0.3s;
+}
+
+.form-group input:focus {
+  border-color: #ff5fa2;
+  box-shadow: 0 0 0 3px rgba(255, 95, 162, 0.15);
+}
+
+/* Buttons */
+.btn-group {
+  display: flex;
+  gap: 14px;
+  margin-top: 28px;
+}
+
+.btn-primary {
+  flex: 1;
+  padding: 13px;
+  border-radius: 30px;
+  border: none;
+  cursor: pointer;
+  background: linear-gradient(135deg, #ff5fa2, #ff9acb);
+  color: #fff;
+  font-weight: 600;
+  font-size: 14px;
+  box-shadow: 0 12px 28px rgba(255, 95, 162, 0.35);
+  transition: 0.3s;
+}
+
+.btn-primary:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 18px 35px rgba(255, 95, 162, 0.45);
+}
+
+.btn-cancel {
+  flex: 1;
+  padding: 13px;
+  text-align: center;
+  border-radius: 30px;
+  border: 2px solid #ff5fa2;
+  color: #ff5fa2;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 14px;
+  transition: 0.3s;
+}
+
+.btn-cancel:hover {
+  background: #ff5fa2;
+  color: #fff;
+}

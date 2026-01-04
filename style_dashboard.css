@@ -1,0 +1,147 @@
+/* ===== HERO SECTION ===== */
+.hero {
+  min-height: 100vh;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.hero-overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    180deg,
+    rgba(255, 95, 162, 0.75),
+    rgba(255, 182, 193, 0.65),
+    rgba(255, 255, 255, 0.85)
+  );
+}
+
+/* ===== HERO CONTENT ===== */
+.hero-content {
+  position: relative;
+  z-index: 2;
+  max-width: 1100px;
+  padding: 60px 30px;
+  text-align: center;
+  color: #333;
+}
+
+.hero-content h1 {
+  font-size: 46px;
+  font-weight: 700;
+  color: #ff5fa2;
+  margin-bottom: 10px;
+}
+
+.hero-content p {
+  font-size: 16px;
+  margin-bottom: 25px;
+  color: #444;
+}
+
+.hero-content h2 {
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 1.8;
+  max-width: 900px;
+  margin: 0 auto 50px;
+  color: #555;
+}
+
+/* ===== CARD CONTAINER ===== */
+.card-container {
+  background: rgba(255, 255, 255, 0.9);
+  border-radius: 22px;
+  padding: 45px 40px;
+  box-shadow: 0 30px 60px rgba(255, 95, 162, 0.35);
+  animation: fadeUp 0.8s ease;
+}
+
+@keyframes fadeUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* ===== GRID CARD ===== */
+.card-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 25px;
+  margin-bottom: 45px;
+}
+
+.card {
+  background: linear-gradient(160deg, #ff5fa2, #ff9acb);
+  color: #fff;
+  border-radius: 18px;
+  padding: 35px 25px;
+  text-align: center;
+  box-shadow: 0 15px 30px rgba(255, 95, 162, 0.45);
+  transition: 0.3s;
+}
+
+.card:hover {
+  transform: translateY(-6px);
+}
+
+.card-number {
+  font-size: 42px;
+  font-weight: 700;
+  margin-bottom: 8px;
+}
+
+.card p {
+  font-size: 15px;
+  opacity: 0.95;
+}
+
+/* ===== BUTTON SECTION ===== */
+.btn-box {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 20px;
+}
+
+.btn-primary {
+  display: inline-block;
+  padding: 14px;
+  background: #fff;
+  border-radius: 30px;
+  color: #ff5fa2;
+  font-weight: 600;
+  text-decoration: none;
+  border: 2px solid #ff5fa2;
+  transition: 0.3s;
+}
+
+.btn-primary:hover {
+  background: linear-gradient(135deg, #ff5fa2, #ff9acb);
+  color: #fff;
+  box-shadow: 0 10px 25px rgba(255, 95, 162, 0.4);
+  transform: translateY(-2px);
+}
+
+/* ===== RESPONSIVE ===== */
+@media (max-width: 768px) {
+  .hero-content h1 {
+    font-size: 36px;
+  }
+
+  .hero-content h2 {
+    font-size: 16px;
+  }
+
+  .card-container {
+    padding: 35px 25px;
+  }
+}

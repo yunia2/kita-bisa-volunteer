@@ -1,0 +1,147 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+/* ===== BACKGROUND GAMBAR ===== */
+body {
+  height: 100vh;
+  background: url('../img/volunteer-bg.jpg') no-repeat center center/cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  overflow: hidden;
+}
+
+/* ===== OVERLAY PINK SOFT ===== */
+.overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(255, 182, 193, 0.65); /* pink lembut */
+  z-index: 1;
+}
+
+/* ===== WRAPPER ===== */
+.wrapper {
+  position: relative;
+  z-index: 2;
+  max-width: 420px;
+  width: 100%;
+  padding: 20px;
+}
+
+/* ===== CARD ===== */
+.login-card {
+  background: rgba(255, 255, 255, 0.95);
+  border-radius: 20px;
+  padding: 45px 40px;
+  box-shadow: 0 25px 50px rgba(255, 105, 180, 0.35);
+  text-align: center;
+  animation: fadeUp 0.8s ease;
+}
+
+@keyframes fadeUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.login-card h2 {
+  color: #ff5fa2;
+  margin-bottom: 8px;
+  font-size: 26px;
+}
+
+.login-card p {
+  color: #777;
+  font-size: 14px;
+  margin-bottom: 30px;
+}
+
+/* ===== INPUT + ANIMASI ===== */
+.input-group {
+  position: relative;
+  margin-bottom: 30px;
+}
+
+.input-group input {
+  width: 100%;
+  padding: 12px 5px;
+  border: none;
+  border-bottom: 2px solid #f3c1d9;
+  outline: none;
+  font-size: 14px;
+  background: transparent;
+}
+
+.input-group label {
+  position: absolute;
+  top: 50%;
+  left: 5px;
+  transform: translateY(-50%);
+  color: #aaa;
+  font-size: 13px;
+  pointer-events: none;
+  transition: 0.3s;
+}
+
+/* garis animasi */
+.input-group .line {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background: linear-gradient(90deg, #ff5fa2, #ff9acb);
+  transition: 0.4s;
+}
+
+.input-group input:focus ~ .line,
+.input-group input:valid ~ .line {
+  width: 100%;
+}
+
+.input-group input:focus + label,
+.input-group input:valid + label {
+  top: -8px;
+  font-size: 11px;
+  color: #ff5fa2;
+}
+
+/* efek glow saat ngetik */
+.input-group input:focus {
+  box-shadow: 0 6px 15px rgba(255, 95, 162, 0.25);
+}
+
+/* ===== BUTTON ===== */
+button {
+  width: 100%;
+  padding: 14px;
+  background: linear-gradient(135deg, #ff5fa2, #ff9acb);
+  border: none;
+  border-radius: 30px;
+  color: #fff;
+  font-size: 15px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+button:hover {
+  box-shadow: 0 10px 25px rgba(255, 95, 162, 0.45);
+  transform: translateY(-2px);
+}
+
+/* ===== RESPONSIVE ===== */
+@media (max-width: 480px) {
+  .login-card {
+    padding: 35px 25px;
+  }
+}

@@ -1,0 +1,116 @@
+/* ===== PAGE WRAPPER ===== */
+.page-wrapper {
+  max-width: 1100px;
+  margin: 100px auto;
+  padding: 0 20px;
+}
+
+/* ===== HEADER ACTION ===== */
+.page-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 25px;
+}
+
+.btn-back {
+  text-decoration: none;
+  color: #ff5fa2;
+  font-weight: 600;
+}
+
+.btn-add {
+  text-decoration: none;
+  background: linear-gradient(135deg, #ff5fa2, #ff9acb);
+  color: #fff;
+  padding: 12px 22px;
+  border-radius: 30px;
+  font-weight: 600;
+  box-shadow: 0 10px 25px rgba(255, 95, 162, 0.4);
+  transition: 0.3s;
+}
+
+.btn-add:hover {
+  transform: translateY(-2px);
+  opacity: 0.9;
+}
+
+/* ===== CARD TABLE ===== */
+.card-table {
+  background: #fff;
+  border-radius: 20px;
+  padding: 25px;
+  box-shadow: 0 20px 45px rgba(255, 95, 162, 0.25);
+}
+
+/* ===== TABLE ===== */
+.table-barang {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.table-barang thead {
+  background: linear-gradient(135deg, #ff5fa2, #ff9acb);
+  color: #fff;
+}
+
+.table-barang th,
+.table-barang td {
+  padding: 14px;
+  text-align: center;
+}
+
+.table-barang tbody tr {
+  border-bottom: 1px solid #f1f1f1;
+}
+
+.table-barang tbody tr:hover {
+  background: #fff1f7;
+}
+
+/* ===== AKSI BUTTON ===== */
+.aksi {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
+.btn-edit {
+  text-decoration: none;
+  padding: 7px 14px;
+  border-radius: 20px;
+  background: #ffe1ee;
+  color: #ff5fa2;
+  font-weight: 600;
+}
+
+.btn-hapus {
+  text-decoration: none;
+  padding: 7px 14px;
+  border-radius: 20px;
+  background: #ff6b6b;
+  color: #fff;
+  font-weight: 600;
+}
+
+.btn-edit:hover {
+  background: #ff5fa2;
+  color: #fff;
+}
+
+.btn-hapus:hover {
+  background: #e04848;
+}
+
+/* ===== RESPONSIVE ===== */
+@media (max-width: 768px) {
+  .page-header {
+    flex-direction: column;
+    gap: 15px;
+    align-items: flex-start;
+  }
+
+  .aksi {
+    flex-direction: column;
+  }
+}

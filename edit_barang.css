@@ -1,0 +1,122 @@
+/* RESET */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Segoe UI", sans-serif;
+}
+
+/* BACKGROUND */
+body {
+  min-height: 100vh;
+  background: linear-gradient(180deg, #ffe6f0 0%, #ffffff 70%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* CARD FORM */
+.form-card {
+  background: #ffffff;
+  width: 420px;
+  padding: 36px 34px;
+  border-radius: 22px;
+  box-shadow: 0 25px 55px rgba(255, 95, 162, 0.28);
+  animation: fadeUp 0.6s ease;
+}
+
+/* ANIMATION */
+@keyframes fadeUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* TITLE */
+.form-card h3 {
+  text-align: center;
+  font-size: 26px;
+  color: #ff5fa2;
+  margin-bottom: 28px;
+  font-weight: 700;
+}
+
+/* FORM GROUP */
+.form-group {
+  margin-bottom: 16px;
+}
+
+.form-group label {
+  display: block;
+  font-size: 13px;
+  font-weight: 600;
+  color: #555;
+  margin-bottom: 6px;
+}
+
+/* INPUT */
+.form-group input {
+  width: 100%;
+  padding: 13px 15px;
+  border-radius: 14px;
+  border: 1.8px solid #ffd1e3;
+  font-size: 14px;
+  outline: none;
+  transition: 0.3s ease;
+}
+
+.form-group input:focus {
+  border-color: #ff5fa2;
+  box-shadow: 0 0 0 3px rgba(255, 95, 162, 0.18);
+}
+
+/* BUTTON AREA */
+.btn-group {
+  display: flex;
+  gap: 14px;
+  margin-top: 28px;
+}
+
+/* PRIMARY BUTTON */
+.btn-primary {
+  flex: 1;
+  padding: 13px;
+  border-radius: 30px;
+  border: none;
+  cursor: pointer;
+  background: linear-gradient(135deg, #ff5fa2, #ff9acb);
+  color: #fff;
+  font-size: 14px;
+  font-weight: 600;
+  box-shadow: 0 14px 30px rgba(255, 95, 162, 0.4);
+  transition: 0.3s ease;
+}
+
+.btn-primary:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 20px 40px rgba(255, 95, 162, 0.5);
+}
+
+/* CANCEL BUTTON */
+.btn-cancel {
+  flex: 1;
+  padding: 13px;
+  text-align: center;
+  border-radius: 30px;
+  border: 2px solid #ff5fa2;
+  color: #ff5fa2;
+  font-weight: 600;
+  font-size: 14px;
+  text-decoration: none;
+  transition: 0.3s ease;
+}
+
+.btn-cancel:hover {
+  background: #ff5fa2;
+  color: #ffffff;
+}

@@ -1,0 +1,108 @@
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  min-height: 100vh;
+  background: linear-gradient(180deg, #ffe6f0, #ffffff);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Card Form */
+.form-card {
+  background: #ffffff;
+  width: 420px;
+  padding: 35px 30px;
+  border-radius: 18px;
+  box-shadow: 0 20px 45px rgba(255, 95, 162, 0.25);
+  animation: fadeUp 0.6s ease;
+}
+
+@keyframes fadeUp {
+  from {
+    opacity: 0;
+    transform: translateY(25px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Title */
+.form-card h3 {
+  text-align: center;
+  color: #ff5fa2;
+  font-size: 26px;
+  margin-bottom: 25px;
+}
+
+/* Label */
+.form-group label {
+  display: block;
+  font-size: 14px;
+  color: #555;
+  margin-bottom: 6px;
+}
+
+/* Input */
+.form-group input {
+  width: 100%;
+  padding: 12px 14px;
+  border-radius: 12px;
+  border: 1.8px solid #ffd1e3;
+  outline: none;
+  font-size: 14px;
+  transition: 0.3s;
+}
+
+.form-group input:focus {
+  border-color: #ff5fa2;
+  box-shadow: 0 0 0 3px rgba(255, 95, 162, 0.15);
+}
+
+/* Button Area */
+.btn-group {
+  display: flex;
+  gap: 12px;
+  margin-top: 28px;
+}
+
+/* Button */
+.btn-primary {
+  flex: 1;
+  padding: 12px;
+  border-radius: 30px;
+  border: none;
+  cursor: pointer;
+  background: linear-gradient(135deg, #ff5fa2, #ff9acb);
+  color: #fff;
+  font-weight: 600;
+  font-size: 14px;
+  box-shadow: 0 10px 25px rgba(255, 95, 162, 0.35);
+  transition: 0.3s;
+}
+
+.btn-primary:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 15px 35px rgba(255, 95, 162, 0.45);
+}
+
+/* Cancel Button */
+.btn-cancel {
+  flex: 1;
+  padding: 12px;
+  text-align: center;
+  border-radius: 30px;
+  border: 2px solid #ff5fa2;
+  color: #ff5fa2;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 14px;
+  transition: 0.3s;
+}
+
+.btn-cancel:hover {
+  background: #ff5fa2;
+  color: #fff;
+}
